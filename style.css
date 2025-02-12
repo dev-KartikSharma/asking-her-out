@@ -1,9 +1,12 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+/* Body Styling */
 body {
     width: 100%;
     min-height: 100vh;
@@ -12,6 +15,8 @@ body {
     align-items: center;
     background-color: #ffe5e5;
 }
+
+/* Container */
 .container {
     display: flex;
     flex-direction: column;
@@ -21,13 +26,18 @@ body {
     max-width: 500px;
     margin: 20px;
 }
+
+/* GIF Styling */
 .container .tenor-gif-embed {
     max-width: 200px;
 }
+
+/* Buttons */
 .container .btn {
     display: flex;
     gap: 25px;
 }
+
 .btn a {
     text-decoration: none;
     color: black;
@@ -37,6 +47,13 @@ body {
     box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
     transition: 0.3s;
 }
+
+.btn a:hover {
+    background: #ff4d6d;
+    color: white;
+}
+
+
 /* Message Page Styling */
 .message-box {
     background: white;
@@ -46,4 +63,66 @@ body {
     max-width: 400px;
     text-align: center;
     animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Message Text */
+.message-box h1 {
+    color: #ff4d6d;
+    font-size: 1.8rem;
+}
+
+.message-box p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Cute Emoji Text */
+.message-box p:last-child {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ff4d6d;
+}
+
+/* Back Button */
+.back-btn {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #ff4d6d;
+    color: white;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.3);
+}
+/* Styling for the 'Yes' button */
+.btn-yes {
+    text-decoration: none;
+    color: black;
+    background: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-yes:hover {
+    background: #ff4d6d;
+    color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
